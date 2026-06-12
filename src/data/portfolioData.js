@@ -2,7 +2,7 @@ export const personalInfo = {
   name: "Syed Ibrahim Badhusha M",
   shortName: "Badhusha",
   role: "Java Full Stack Developer",
-  location: "Thoothukudi / Madurai /Chennai",
+  location: "Thoothukudi / Madurai / Chennai",
   email: "badhusha334@gmail.com",
   phone: "+91 7639014820",
   whatsapp: "917639014820",
