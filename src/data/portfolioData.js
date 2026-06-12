@@ -7,8 +7,8 @@ export const personalInfo = {
   phone: "+91 7639014820",
   whatsapp: "917639014820",
   profileImage: "/profile.jpeg",
-  resumePath: "/BASHA_B.E(CSE)_2026_JAVA_FULL_STACK_DEVELOPER.pdf",
-  resumeFileName: "BASHA_B.E(CSE)_2026_JAVA_FULL_STACK_DEVELOPER.pdf",
+  resumePath: "/BASHA_B_E_CSE__2026_JAVA_FULL_STACK_DEVELOPER.pdf",
+  resumeFileName: "BASHA_B_E_CSE__2026_JAVA_FULL_STACK_DEVELOPER.pdf",
   bio: "Passionate Java Full Stack Developer crafting scalable web applications with Spring Boot and React. I thrive at the intersection of clean backend architecture and intuitive frontend experiences.",
   socials: {
     github: {
