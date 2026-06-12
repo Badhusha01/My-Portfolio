@@ -49,8 +49,26 @@
     @apply text-3xl font-bold tracking-tight text-zinc-50 sm:text-4xl lg:text-5xl;
   }
 
+  .typing-text {
+    width: 0;
+    animation: typing 3.2s linear 0.3s infinite;
+  }
+
   .hover-lift {
     @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-500/10;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  70% {
+    width: 100%;
+  }
+  90%,
+  100% {
+    width: 100%;
   }
 }
 

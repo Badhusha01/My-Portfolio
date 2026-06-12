@@ -1,8 +1,11 @@
-import { Heart } from "lucide-react";
+import { Heart, Phone } from "lucide-react";
 import { GitHubIcon, LinkedInIcon } from "./SocialIcons";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { personalInfo, navLinks } from "../data/portfolioData";
+import { getWhatsAppChatLink } from "../utils/contactService";
 
 export default function Footer() {
+  const whatsappLink = getWhatsAppChatLink();
   const year = new Date().getFullYear();
 
   return (
@@ -45,6 +48,22 @@ export default function Footer() {
               aria-label="LinkedIn"
             >
               <LinkedInIcon size={16} />
+            </a>
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-700 text-zinc-500 transition-all hover:border-green-500/50 hover:text-green-400"
+              aria-label="WhatsApp"
+            >
+              <WhatsAppIcon size={16} />
+            </a>
+            <a
+              href={`tel:${personalInfo.phone.replace(/\s/g, "")}`}
+              className="flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-700 text-zinc-500 transition-all hover:border-sky-500/50 hover:text-sky-400"
+              aria-label="Phone"
+            >
+              <Phone size={16} />
             </a>
           </div>
         </div>

@@ -1,8 +1,12 @@
-import { Download, MapPin, ArrowDown } from "lucide-react";
+import { Download, MapPin, ArrowDown, Phone } from "lucide-react";
 import { GitHubIcon, LinkedInIcon } from "./SocialIcons";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { personalInfo } from "../data/portfolioData";
+import { getWhatsAppChatLink } from "../utils/contactService";
 
 export default function Hero() {
+  const whatsappLink = getWhatsAppChatLink();
+
   return (
     <section
       id="hero"
@@ -16,8 +20,9 @@ export default function Hero() {
           </p>
 
           <h1 className="mt-2 text-4xl font-bold leading-[1.1] tracking-tight text-zinc-50 sm:text-5xl lg:text-6xl xl:text-7xl">
-            Hi, I&apos;m{" "}
-            <span className="text-gradient">{personalInfo.shortName}</span>
+            <span className="typing-text inline-block overflow-hidden whitespace-nowrap text-zinc-50">
+              Hi, I&apos;m <span className="text-gradient">{personalInfo.shortName}</span>
+            </span>
           </h1>
 
           <p className="mt-2 text-xl font-medium text-violet-400 sm:text-2xl">
@@ -73,6 +78,22 @@ export default function Hero() {
               aria-label="LinkedIn profile"
             >
               <LinkedInIcon size={18} />
+            </a>
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-700 text-zinc-400 transition-all duration-300 hover:border-green-500/50 hover:text-green-400 hover:shadow-lg hover:shadow-green-500/10"
+              aria-label="WhatsApp chat"
+            >
+              <WhatsAppIcon size={18} />
+            </a>
+            <a
+              href={`tel:${personalInfo.phone.replace(/\s/g, "")}`}
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-700 text-zinc-400 transition-all duration-300 hover:border-sky-500/50 hover:text-sky-400 hover:shadow-lg hover:shadow-sky-500/10"
+              aria-label="Call phone"
+            >
+              <Phone size={18} />
             </a>
           </div>
         </div>

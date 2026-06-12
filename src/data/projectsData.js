@@ -47,6 +47,15 @@ export const projects = [
     liveLink: "https://instagram-clone-inky-five-52.vercel.app/",
     category: "Frontend",
   },
+   {
+    id: 4,
+    title: "Restaurant Admin Panel",
+    description:
+      "Admin dashboard for restaurant management with Spring Boot and Thymeleaf, featuring CRUD operations for menu items, orders, and delivery management with a clean and intuitive UI.",
+    techStack: ["Java", "Thymeleaf", "Spring Boot"],
+    githubLink: "https://github.com/Badhusha01/Swiggy-Clone-Backend",
+    category: "Backend",
+  },
   {
     id: 6,
     title: "Income Expense Tracker",
