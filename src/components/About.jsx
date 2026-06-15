@@ -25,15 +25,10 @@ export default function About() {
               <h3 className="text-lg font-semibold text-zinc-100">Who I Am</h3>
             </div>
             <p className="leading-relaxed text-zinc-400">
-              I&apos;m <strong className="font-medium text-zinc-200">{personalInfo.name}</strong>, a{" "}
-              {personalInfo.role} based in {personalInfo.location}. I specialize in
-              building end-to-end web applications — from designing RESTful APIs with
-              Spring Boot to crafting responsive, interactive UIs with React.
+              I&apos;m <strong className="font-medium text-zinc-200">{personalInfo.name}</strong>, a <strong className="font-medium text-zinc-200">B.E. Computer Science & Engineering</strong> graduate and a passionate Java Full Stack Developer based in {personalInfo.location}. I specialize in building end-to-end web applications — from designing RESTful APIs with Spring Boot to crafting responsive, interactive UIs with React.
             </p>
             <p className="mt-4 leading-relaxed text-zinc-400">
-              My approach combines clean layered architecture on the backend with
-              thoughtful frontend state management, ensuring every project is
-              maintainable, scalable, and delightful to use.
+              My approach combines clean layered architecture on the backend with thoughtful frontend state management, ensuring every project is maintainable, scalable, and delightful to use.
             </p>
           </div>
 
